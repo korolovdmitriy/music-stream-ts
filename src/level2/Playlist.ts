@@ -1,5 +1,5 @@
 // import { ITrack } from "./ITrack";
-// import { IPlaylist } from "../level4/IPlaylist";
+// import { IPlaylist } from "../level1/IPlaylist";
 
 class Playlist implements IPlaylist{
   private _tracks: ITrack[];

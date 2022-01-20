@@ -1,4 +1,4 @@
-// import { ITrack } from "../level3/ITrack";
+// import { ITrack } from "../level2/ITrack";
 
 interface IPlaylist {
     readonly tracks: ITrack[];
