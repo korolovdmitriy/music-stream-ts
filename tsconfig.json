@@ -1,11 +1,12 @@
 {
     "compilerOptions": {
         "target": "ES6",
-        "module": "system",
+        // "module": "system",
+        "module": "ES6",
         "removeComments": true,
         "strict": true,
-        "outDir": "./distr",
-        // "outFile": "./distr/index.js",
+        // "outFile": "./distr/app.js",
+        "outDir": "./distr",        
         "sourceMap": true
     },
     "include": [
