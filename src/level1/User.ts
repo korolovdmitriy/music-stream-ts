@@ -1,3 +1,7 @@
+// import { ITrack } from "../level3/ITrack";
+// import { IPlaylist } from "./IPlaylist";
+// import { ISubscription } from "./ISubscription";
+
 class User {
   private _name: string;
   private _email: string;
@@ -94,7 +98,7 @@ class User {
     return null;
   }
 
-  public addTrackToPlaylist(playlistId: number, track: Track): void {
+  public addTrackToPlaylist(playlistId: number, track: ITrack): void {
     const playlist = this.findPlaylist(playlistId);
     if (playlist) {
       playlist.addTrack(track);
@@ -112,3 +116,5 @@ class User {
     this._subscription.changeStatus();
   }
 }
+
+// export { User };

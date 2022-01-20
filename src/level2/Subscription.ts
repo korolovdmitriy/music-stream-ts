@@ -1,3 +1,5 @@
+// import { ISubscription } from "../level1/ISubscription";
+
 class Subscription implements ISubscription {
   private _status: boolean;
   public constructor() {
@@ -12,3 +14,5 @@ class Subscription implements ISubscription {
     this._status = !this._status;
   }
 }
+
+// export { Subscription };

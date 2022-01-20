@@ -1,3 +1,6 @@
+// import { TrackData } from "./TrackData";
+// import { ITrack } from "../level2/ITrack";
+
 class Track extends TrackData implements ITrack {
   private _title: string;
   private _id: number;
@@ -33,3 +36,5 @@ class Track extends TrackData implements ITrack {
     this._state = false;
   }
 }
+
+// export { Track };

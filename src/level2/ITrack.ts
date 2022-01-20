@@ -7,3 +7,5 @@ interface ITrack {
     play(): void;
     stop(): void;
 }
+
+// export { ITrack };

@@ -1,8 +1,7 @@
 {
     "compilerOptions": {
         "target": "ES6",
-        // "module": "system",
-        "module": "ES6",
+        "module": "UMD",
         "removeComments": true,
         "strict": true,
         // "outFile": "./distr/app.js",
@@ -17,3 +16,4 @@
         "**/*.spec.ts"
     ]
 }
+
