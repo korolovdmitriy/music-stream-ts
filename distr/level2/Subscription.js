@@ -1,13 +1,26 @@
-"use strict";
-class Subscription {
-    constructor() {
-        this._status = false;
+(function (factory) {
+    if (typeof module === "object" && typeof module.exports === "object") {
+        var v = factory(require, exports);
+        if (v !== undefined) module.exports = v;
     }
-    get status() {
-        return this._status;
+    else if (typeof define === "function" && define.amd) {
+        define(["require", "exports"], factory);
     }
-    changeStatus() {
-        this._status = !this._status;
+})(function (require, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    exports.Subscription = void 0;
+    class Subscription {
+        constructor() {
+            this._status = false;
+        }
+        get status() {
+            return this._status;
+        }
+        changeStatus() {
+            this._status = !this._status;
+        }
     }
-}
+    exports.Subscription = Subscription;
+});
 //# sourceMappingURL=Subscription.js.map

@@ -23,5 +23,5 @@ class TrackData {
     this._rate = newRate;
   }
 }
-// export { TrackData };
+export { TrackData };
 

@@ -3,4 +3,4 @@ interface ISubscription {
     changeStatus(): void
 }
 
-// export { ISubscription };
+export { ISubscription };

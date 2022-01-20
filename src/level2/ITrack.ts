@@ -8,4 +8,4 @@ interface ITrack {
     stop(): void;
 }
 
-// export { ITrack };
+export { ITrack };

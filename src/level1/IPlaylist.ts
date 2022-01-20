@@ -1,4 +1,4 @@
-// import { ITrack } from "../level2/ITrack";
+import { ITrack } from "../level2/ITrack";
 
 interface IPlaylist {
     readonly tracks: ITrack[];
@@ -11,4 +11,4 @@ interface IPlaylist {
     removeTrackById(id: number): void;
 }
 
-// export { IPlaylist };
+export { IPlaylist };

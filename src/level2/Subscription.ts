@@ -1,4 +1,4 @@
-// import { ISubscription } from "../level1/ISubscription";
+import { ISubscription } from "../level1/ISubscription";
 
 class Subscription implements ISubscription {
   private _status: boolean;
@@ -15,4 +15,4 @@ class Subscription implements ISubscription {
   }
 }
 
-// export { Subscription };
+export { Subscription };

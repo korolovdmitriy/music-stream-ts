@@ -1,12 +1,7 @@
-// import { ITrack } from "./level2/ITrack";
-// import { IPlaylist } from "./level1/IPlaylist";
-// import { ISubscription } from "./level1/ISubscription";
-
-// import { TrackData } from "./level3/TrackData";
-// import { Track } from "./level3/Track";
-// import { Playlist } from "./level2/Playlist";
-// import { Subscription } from "./level2/Subscription";
-// import { User } from "./level1/User";
+import { Track } from "./level3/Track";
+import { Playlist } from "./level2/Playlist";
+import { Subscription } from "./level2/Subscription";
+import { User } from "./level1/User";
 
 const track01 = new Track("Techno", 5, "Max Cooper - Spike", 1);
 const track02 = new Track("Melodic House", 6, "ARTBAT - Horizon", 2);
@@ -24,8 +19,6 @@ const playlist05 = new Playlist([track03, track04, track05], "Fourth playlist", 
 const user01 = new User("User name", "User email", "password", [playlist01, playlist02, playlist03], userSubscription);
 
 user01.changeSubscription();
-// console.log(user01);
-// console.log(user01.subscription);
 
 user01.addPlaylistAsync(playlist04, function (error) {
   if (error) {
