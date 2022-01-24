@@ -1,11 +1,11 @@
 import { TrackData } from "./TrackData";
-import { ITrack } from "../level2/ITrack";
+import { ITrack } from "../level1/ITrack";
 
 class Track extends TrackData implements ITrack {
   private _title: string;
   private _id: number;
   private _state: boolean = false;
-   public constructor(genre: string, rate: number, title: string, id: number) {
+  public constructor(genre: string, rate: number, title: string, id: number) {
     super(genre, rate);
     this._title = title;
     this._id = id;

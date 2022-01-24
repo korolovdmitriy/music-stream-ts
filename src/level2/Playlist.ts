@@ -1,4 +1,4 @@
-import { ITrack } from "./ITrack";
+import { ITrack } from "../level1/ITrack";
 import { IPlaylist } from "../level1/IPlaylist";
 
 class Playlist implements IPlaylist{

@@ -1,4 +1,4 @@
-import { ITrack } from "../level2/ITrack";
+import { ITrack } from "./ITrack";
 import { IPlaylist } from "./IPlaylist";
 import { ISubscription } from "./ISubscription";
 
@@ -55,9 +55,9 @@ class User {
     }
   }
 
-  public addPlaylistAsync(playlist: IPlaylist, callback: (error: object | undefined) => void ) {
+  public addPlaylistAsync(playlist: IPlaylist, callback: (error: Error | undefined) => void ) {
     setTimeout((): void => {
-      let error: object | undefined;
+      let error: Error | undefined;
       if (!this.findPlaylist(playlist.id) && this._subscription.status) {
         this._playlists.push(playlist);
       } else {
@@ -89,7 +89,7 @@ class User {
   }
 
   public findTrackById(id: number): ITrack | null {
-    const playlist = this._playlists.find((playlist) =>
+    const playlist = this._playlists.find((playlist) => ///????????
       playlist.findTrackById(id)
     );
     if (playlist) {
@@ -99,14 +99,14 @@ class User {
   }
 
   public addTrackToPlaylist(playlistId: number, track: ITrack): void {
-    const playlist = this.findPlaylist(playlistId);
+    const playlist: IPlaylist | null = this.findPlaylist(playlistId);
     if (playlist) {
       playlist.addTrack(track);
     }
   }
 
   public removeTrackFromPlaylist(playlistId: number, trackId: number): void {
-    const playlist = this.findPlaylist(playlistId);
+    const playlist: IPlaylist | null = this.findPlaylist(playlistId);
     if (playlist) {
       playlist.removeTrackById(trackId);
     }

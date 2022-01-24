@@ -4,12 +4,12 @@
         if (v !== undefined) module.exports = v;
     }
     else if (typeof define === "function" && define.amd) {
-        define(["require", "exports", "./level3/Track", "./level2/Playlist", "./level2/Subscription", "./level1/User"], factory);
+        define(["require", "exports", "./level2/Track", "./level2/Playlist", "./level2/Subscription", "./level1/User"], factory);
     }
 })(function (require, exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
-    const Track_1 = require("./level3/Track");
+    const Track_1 = require("./level2/Track");
     const Playlist_1 = require("./level2/Playlist");
     const Subscription_1 = require("./level2/Subscription");
     const User_1 = require("./level1/User");
